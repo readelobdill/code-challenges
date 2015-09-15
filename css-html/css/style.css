@@ -1,0 +1,146 @@
+/*CSS*/
+
+body{
+	background: white;
+	font-family: 'Open Sans', sans-serif;
+	color: #373737;
+}
+
+a{
+	color: #00c9f4
+}
+
+
+h1{
+	font-size: 55px;
+	line-height: 55px;
+}
+
+h2{
+	font-weight: 300;
+	font-size: 35px;
+}
+
+header{
+	    margin-top: 50px;
+		margin-bottom: 80px;
+}
+
+/*CLASS CODE SECTION*/
+.class_finder_wrapper{
+	text-align: center;
+}
+
+.class_code_container{
+	text-align: center;
+}
+
+.class_code_container h1.class_code{
+	font-size: 66px;
+    background-color: #898989;
+    max-width: 500px;
+    padding: 27px 63px;
+    font-weight: 400;
+    margin: 60px auto;
+    color: white;
+}
+
+
+/*HOW IT WORKS*/
+
+section.howitworks h1{
+	color: #a80405;
+}
+
+section.howitworks .title{
+	text-align: center;
+	border-bottom: 1px #ccc solid;
+    padding-bottom: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+	margin-bottom: 100px;
+}
+
+/*STEP*/
+section.howitworks h1.step{
+	color: #363636;
+}
+
+section.step_wrapper {
+    margin-top: 45px;
+}
+
+section.howitworks h1.step span{
+	font-size: 110px;
+    font-weight: 300;
+}
+
+/*footer*/
+
+footer{
+    margin: 40px;
+    text-align: center;
+    color: #707070;
+    POSITION: ABSOLUTE;
+    margin-left: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-right: auto;
+}
+
+/**
+**
+**
+**404
+**
+**
+**/
+
+img{
+	max-width: 100%;
+}
+
+.errorpageimage{
+	max-height:350px;
+	overflow:hidden;
+}
+
+.errorcontent{
+	text-align: center;
+	color: #707070;
+	font-size: 16px;
+	margin-bottom: 40px;
+}
+
+.errorcontent h2{
+	color: #707070;
+	font-weight: 600;
+}
+
+
+
+/*MEDIA*/
+
+@media (min-width: 1200px){
+	.container {
+	    width: 1250px;
+	}
+}
+
+@media(max-width:780px){
+	.class_code_container h1.class_code{
+		font-size: 30px;
+		padding: 30px;
+	}
+
+	h1{
+		font-size:30px;
+	}
+
+	h2{
+		font-size: 20px;
+	}
+}
+
+
