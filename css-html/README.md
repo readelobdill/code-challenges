@@ -6,6 +6,8 @@ The banner image is either too tall, pushing the content off the page, or too na
 
 We don't want the message text pushed down below, and also don't think it looks right with the text laid on top of the image. 
 
+![500 Error Challenge](/css-html/images/challenge.png?raw=true "500 Error Challenge")
+
 *Challenge is:* Get the banner image to stretch to 100% width, but also not occupy more than 1/3 of the screen height -- without editing the jpg.
 
 *Instructions:* Please fork this repo, branch, commit, and pull request your response. 
