@@ -2,7 +2,7 @@
 
 ### The Challenge: 
 
-Here is a very basic react app. It lists some items. You can click to select, and change a filter. 
+Here is a very basic react app. It lists some items. You can click to select, and there is a filter you can change. 
 
 You must update the app to:
 - [ ] Fetch "source" filters remotely from `http://www.kiddom.co/content/types.json`
