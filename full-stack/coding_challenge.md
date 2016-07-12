@@ -75,7 +75,7 @@ technologies provided that the general client/service architecture is
 respected.
 
 Choose **one** of the following technical tracks that best suits your skillset:
-
+	
 1. **Full-stack**: include both front-end and back-end.
 2. **Back-end track**: include a minimal front-end (e.g. a static view or API
    docs). Write, document and test your API as if it will be used by other
@@ -93,14 +93,12 @@ your challenge.
 
 Here are some technologies we are more familiar with:
 
-* **Python** (most of our back-end uses this language)
-* JavaScript
+* **Go** (all of our back-end uses this language)
+* **JavaScript** 
 * Ruby
-* PHP
-* Go
+* Python
 * C++
-* Haskell
-* Java
+* PHP
 
 You are also free to use any web framework. If you choose to use a framework
 that results in boilerplate code in the repository, please detail in your
