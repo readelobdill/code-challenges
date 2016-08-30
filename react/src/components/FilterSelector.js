@@ -1,12 +1,16 @@
 import React from 'react';
 
-export default function FilterSelector({filters, activeFilter, onChange}) {
+export default function FilterSelector({filters, activeFilter, loading, onChange}) {
     return (
-        <select onChange={(e) => onChange(e.target.value)}>
-            {filters.map(f =>
-                <option
-                    selected={f == activeFilter}
-                >{f}</option>)}
+        <select defaultValue={activeFilter} onChange={(e) => onChange(e.target.value)}>
+    			<option value={null}>{loading ? "Loading..." : "Select One"}</option>
+    		    {filters.map(f =>
+    		        <option
+    		        	key={f}
+    		        	value={f}
+    		        >{f}</option>)}
+    			}
+        	}
         </select>
     );
 };

@@ -1,12 +1,6 @@
-import { ACTIVATE, SET_FILTER } from '../actionTypes';
+import { ACTIVATE, SET_FILTER, POPULATE_FILTER, POPULATE_ITEMS, REQUEST_ITEMS, REQUEST_FILTERS } from '../actionTypes';
 
-const INITIAL = [
-    {id: 1, title: "Foo", source: "home"},
-    {id: 2, title: "Foo 2", source: "away"},
-    {id: 3, title: "Foo 3", source: "home"}
-];
-
-export function items(state = INITIAL, action) {
+export function items(state = [], action) {
     switch (action.type) {
         case ACTIVATE:
             let item = action.data;
@@ -14,6 +8,41 @@ export function items(state = INITIAL, action) {
                 i.active = (i.id == item.id);
                 return i;
             });
+        case REQUEST_ITEMS:
+            return [];
+        case POPULATE_ITEMS:
+            return action.items;
+        default:
+            return state;
+    }
+}
+
+export function filtersLoading(state = false, action){
+    switch (action.type) {
+        case REQUEST_FILTERS:
+            return true;
+        case POPULATE_FILTER:
+            return false
+        default:
+            return state;
+    }
+}
+
+export function itemsLoading(state = false, action){
+   switch (action.type) {
+        case REQUEST_ITEMS:
+           return true;
+        case POPULATE_ITEMS:
+            return false
+        default:
+           return state;
+   }
+}
+
+export function filters(state = [], action) {
+    switch (action.type) {
+        case POPULATE_FILTER:
+            return Object.keys(action.filters);
         default:
             return state;
     }

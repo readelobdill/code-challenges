@@ -1,20 +1,19 @@
 import { connect } from 'react-redux';
 import { FilterSelector } from '../components';
-import { setFilter } from '../actions';
+import { fetchItems } from '../actions';
 
 const mapStateToProps = (state) => {
-    let uniqueSources = new Set();
-    state.items.forEach(item => uniqueSources.add(item.source));
     return {
-        filters: Array.from(uniqueSources),
-        activeFilter: state.activeFilter
+        filters: state.filters,
+        activeFilter: state.activeFilter,
+        loading: state.filtersLoading
     };
 };
 
 const mapDispatchToProps = (dispatch) => {
     return {
         onChange: (filter) => {
-            dispatch(setFilter(filter));
+            dispatch(fetchItems(filter));
         }
     };
 };

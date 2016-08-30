@@ -1,2 +1,8 @@
 export const ACTIVATE = 'ACTIVATE';
+
 export const SET_FILTER = 'SET_FILTER';
+export const REQUEST_FILTERS = 'REQUEST_FILTERS';
+export const POPULATE_FILTER = 'POPULATE_FILTER';
+
+export const REQUEST_ITEMS = 'REQUEST_ITEMS';
+export const POPULATE_ITEMS = 'POPULATE_ITEMS';
